@@ -1,14 +1,22 @@
 <template>
   <!-- TODO: Create github acct. also new vue project-->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand">
         <img class="" width="30" height="30" src="./../assets/logo.png" />
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id="navbarNav" class="collapse navbar-collapse d-md-block justify-content-md-end justify-content-center">
+      <div
+        id="navbarNav"
+        class="collapse navbar-collapse d-md-block justify-content-md-end justify-content-center"
+      >
         <ul id="main-nav" class="navbar-nav justify-content-center">
           <li class="nav-item active">
             <a class="nav-link" href="#">HOME </a>
@@ -29,11 +37,9 @@
 </template>
 <script>
 export default {
-  name: 'Navbar',
-  components: {
-
-  }
-}
+  name: "Navbar",
+  components: {},
+};
 </script>
 <style>
 .nav-cont {

@@ -1,0 +1,121 @@
+<template>
+  <div id="app">
+    <header>
+      <h1>Frankling Running Club</h1>
+    </header>
+    <div class="container">
+      <main class="main">
+        <h2>Come join us!</h2>
+        <p>
+          The Franklin Running club meets at 6:00pm every Thursday
+          at the town square. Runs are three to five miles, at your
+          own pace.
+        </p>
+      </main>
+      <aside class="sidebar">
+        <a href="/twitter" class="button-link">
+          follow us on Twitter
+        </a>
+        <a href="/facebook" class="button-link">
+          like us on Facebook
+        </a>
+        <a href="/sponsors" class="sponsor-link">become a sponsor
+        </a>
+      </aside>
+    </div>
+  </div>
+</template>
+<script>
+// import HelloWorld from './components/HelloWorld.vue'
+// import BoxModel from './components/Ch3.vue'
+
+export default {
+  name: 'App',
+  components: {
+
+  }
+}
+</script>
+<style>
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body *+* {
+  margin-top: 1.5em;
+}
+
+
+header {
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: #0072b0;
+  border-radius: .5em;
+}
+
+/*main {
+  display: block;
+}*/
+.container {
+  display: flex;
+}
+
+
+.main {
+  width: 70%;
+  padding: 1em 1.5em;
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 1.5em;
+  margin-top: 0;
+  margin-left: 1.5em;
+  background-color: #fff;
+  border-radius: .5em;
+}
+
+.button-link {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  background-color: #0090C9;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-link+.button-link {
+  margin-top: 1.5em;
+}
+
+.sponsor-link {
+  display: block;
+  color: #0072b0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+
+}*/
+</style>
